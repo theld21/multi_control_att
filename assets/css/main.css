@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-scroll {
+  height: calc(100vh - 40px);
+}
+
+.scroll-bar {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.disable-select-text {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
